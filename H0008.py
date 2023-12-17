@@ -7,15 +7,16 @@ while True:
     #if era not in "SHR":
         print("Input not recognized. Please try again.")
         continue
-    elif era == "S":
-        year_addition = 1925
+    else:
+        #when the above statement is NOT satisfied, the user input is correct, so we can break the loop
         break
-    elif era == "H":
-        year_addition = 1988
-        break
-    elif era == "R":
-        year_addition = 2018
-        break
+
+if era == "S":
+    year_addition = 1925
+elif era == "H":
+    year_addition = 1988
+elif era == "R":
+    year_addition = 2018
 
 while True:
     japanese_year = input("Please input the Japanese year: ")
