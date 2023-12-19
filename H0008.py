@@ -16,8 +16,8 @@ elif era == "R":
 
 while True:
     japanese_year = input("Please input the Japanese year: ")
-    if japanese_year.isdigit() == False:
-        print("Please input numbers only")
+    if japanese_year.isdecimal() == False:
+        print("Please input hankaku numbers only")
     else:
         break
 
