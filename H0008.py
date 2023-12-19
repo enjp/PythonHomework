@@ -3,13 +3,8 @@ year_addition = 0
 while True:
     era = input("Please type S, H, or R: ")
     if era != "S" and era != "H" and era != "R":
-    #an alternative condition is as follows
-    #if era not in "SHR":
         print("Input not recognized. Please try again.")
-        #continue
-        #↑最初はここでcontinueを入れていましたが、不要なことに気づきました。（ここの場合、あってもなくても全く同じ動作になります。）
     else:
-        #when the above statement is NOT satisfied, the user input is correct, so we can break the loop
         break
 
 if era == "S":
